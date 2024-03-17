@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Madimi One', sans-serif;
+  }
+/* Header design */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 30px;
+    color: #6a929d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: #6a929d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: whitesmoke;
+}
+
+/* content design */
+  body {
+    margin-top: 80px;
+    background: linear-gradient(to top, #9bbfc9, #cae3ea);
+
+  }
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #6a929d;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color: #6a929d;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #6a929d;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid transparent;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6a929d;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #6a929d;
+    color: #ffffff;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em #6a929d;
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: auto;
+    height: auto;
+  }
+  .container {
+    padding-top: 1em;
+    color: #6a929d;
+  }
+  .container h5 {
+    font-weight: 500;
+    font-size: large;
+  }
+  .container h6 {
+    font-weight: 500;
+    font-size: small;
+  }
+  .container h7 {
+    font-weight: 500;
+    font-size: smaller;
+    color: #9bbfc9;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }

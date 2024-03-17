@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Website | Uyen Minh Trinh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <header class ="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="project.html">Project</a>
+                <a href="resume.html">Resume</a>
+                <a href="course.html">Course</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section id="home" class="home">
+        <div class="home-image">
+            <img src="img/home_Img.png" alt="home-image" width="550" height="550"/>
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Uyen Minh Trinh</h1>
+            <h3>Computer Programmer</h3>
+            <p>Hey there! I'm a computer programming student, diving into the magical world of code.  
+                Passionate about solving puzzles and crafting cool solutions with my coding wand! 
+                Excited to sprinkle a bit of my tech magic into the world!</p>
+            
+            <div class="home-sci">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section id="project" class="project">
+        <div class="project-content">
+            <h1>Code Your Tunes!</h1>
+            <h3>Build a Music Player with Ease</h3>
+            <p>Unleash your inner developer and code your own music player!  
+                HTML, CSS, and JavaScript are the secret ingredients.</p>
+            <button class="download">Download code</button>
+        </div>
+        <div class="container">
+            <div class="music-player">
+                <img class="song-image" src="img/cover.png" alt="cover"/>
+                <h1 class="playing"><span class="song-name"></span></h1>
+                <p>Laufey & the Iceland Symphony Orchestra</p>
+                <div class="controls">
+                <button class="btn previous"><i class="ph-bold ph-skip-back"></i></button>
+                <button class="btn play-pause">
+                    <i id="play-pause-icon" class="ph-bold ph-play"></i>
+                </button>
+                <button class="btn next"><i class="ph-bold ph-skip-forward"></i></button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- resume section design -->
+    <section id ="resume" class="resume">
+        <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Education</h4>
+                        <h5>Advanced Diploma of Computer Programming and Analysis</h5>
+                        <ul> 
+                            <li>Ottawa, ON</li>
+                            <li>Sep, 2023 – April, 2026</li>
+                        </ul>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Java, JavaScript</li>
+                            <li>SQL</li>
+                            <li>HTML/CSS</li>
+                            <li>Unix/Linux (VMware)</li>
+                        </ul>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Projects</h4>
+                        <p>!tune - Music Player (See the below)</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    </section>
+
+    <!-- course section design -->
+    <section id="course" class="course">
+        <div class="course-container">
+            <div class="course-box-container">
+        
+                <div class="course-box">
+                    <h3>Fall 2023</h3>
+                    <ul>
+                        <li>CST 8116</li>
+                        <li>CST 8215</li>
+                        <li>CST 8118</li>
+                    </ul>
+                </div>
+        
+                <div class="course-box">
+                    <h3>Winter 2024</h3>
+                    <ul>
+                        <li>CST 2355</li>
+                        <li>CST 8285</li>
+                        <li>CST 8284</li>
+                        <li>CST 8102</li>
+                    </ul>
+                </div>
+        
+        
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h1>Huh?</h1>
+            <h3>Contact info?</h3>
+            <p>Nah, just send a carrier pigeon to my cat. He's the boss around here. 
+                I'm just the humble servant fetching his tuna.</p>
+        </div>
+    </section>
+</body>
+</html>

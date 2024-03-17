@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="courseStyle.css" />
+    <!-- Script -->
+    <script src="courseScript.js" defer></script>
+  </head>
+  <body>
+    <header class ="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="resume.html">Resume</a>
+                <a href="course.html">Course</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search"><i class='bx bx-search'></i></button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Fall_2023')">Fall 2023</button>
+        <button class="button-value" onclick="filterProduct('Winter_2024')">Winter 2024</button>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="courseScript.js"></script>
+  </body>
+</html>
